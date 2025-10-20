@@ -10,10 +10,21 @@ namespace Exo1Namespace
 
         void Start()
         {
-            Mesh mesh = GetComponent<MeshFilter>().mesh;
+            MeshFilter meshfilter = GetComponent<MeshFilter>();
 
-            mesh.Clear();
+            meshfilter.mesh = createMesh();
 
+
+        }
+
+        void Update()
+        {
+
+        }
+
+        public Mesh createMesh()
+        {
+            Mesh mesh = new Mesh();
             var vertices = new System.Collections.Generic.List<Vector3>();
             var triangles = new System.Collections.Generic.List<int>();
             for (int i = 0; i <= height; i++)
@@ -23,7 +34,6 @@ namespace Exo1Namespace
                     vertices.Add(new Vector3(j, i, 0));
                 }
             }
-
             for (int i = 0; i < height; i++)
             {
                 for (int j = 0; j < width; j++)
@@ -46,16 +56,9 @@ namespace Exo1Namespace
                     triangles.Add(topLeft);
                 }
             }
-
-
             mesh.vertices = vertices.ToArray();
             mesh.triangles = triangles.ToArray();
-
-        }
-
-        void Update()
-        {
-
+            return mesh;
         }
     }
 }
