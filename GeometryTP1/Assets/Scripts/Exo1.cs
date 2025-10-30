@@ -17,11 +17,6 @@ namespace Exo1Namespace
 
         }
 
-        void Update()
-        {
-
-        }
-
         public Mesh createMesh()
         {
             Mesh mesh = new Mesh();

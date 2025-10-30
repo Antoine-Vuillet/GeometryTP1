@@ -13,12 +13,6 @@ public class Exo2 : MonoBehaviour
 
     }
 
-
-    void Update()
-    {
-        
-    }
-
     public Mesh CylindreMesh()
     {
         Mesh mesh = new Mesh();

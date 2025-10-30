@@ -304,7 +304,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   height: 3
   radius: 1
-  nbMeridiens: 3
+  nbMeridiens: 100
 --- !u!23 &382863660
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -689,7 +689,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   height: 3
   radius: 1
-  nbMeridiens: 3
+  nbMeridiens: 30
+  TroncH: 3
 --- !u!23 &1819967682
 MeshRenderer:
   m_ObjectHideFlags: 0
